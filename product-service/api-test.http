@@ -1,0 +1,14 @@
+### Create a Product
+POST http://localhost:8080/api/product
+Content-Type: application/json
+
+{
+  "name": "Mobile",
+  "description": "High performance Mobile",
+  "price": 50000.50
+}
+
+### Separation line above is mandatory!
+
+### Get all Products
+GET http://localhost:8080/api/product

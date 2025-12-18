@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b55f0ca0-b1de-4780-9d3b-741e448d7d3f" name="Changes" comment="Order Code changes">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,47 +24,52 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "assignee": "Astik2004",
-      "author": "Astik2004"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;Astik2004&quot;,
+      &quot;author&quot;: &quot;Astik2004&quot;
     },
     {
-      "state": "MERGED",
-      "assignee": "Astik2004",
-      "author": "Astik2004"
+      &quot;state&quot;: &quot;MERGED&quot;,
+      &quot;assignee&quot;: &quot;Astik2004&quot;,
+      &quot;author&quot;: &quot;Astik2004&quot;
     }
   ],
-  "lastFilter": {
-    "state": "MERGED",
-    "assignee": "Astik2004",
-    "author": "Astik2004"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;MERGED&quot;,
+    &quot;assignee&quot;: &quot;Astik2004&quot;,
+    &quot;author&quot;: &quot;Astik2004&quot;
   }
-}]]></component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDOQqhthM65aMLJ",
-        "number": 1
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOQqhthM65aMLJ&quot;,
+        &quot;number&quot;: 1
       },
-      "lastSeen": 1765997688633
+      &quot;lastSeen&quot;: 1765997688633
     }
   ]
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Astik2004/Microservices_Project.git",
-    "accountId": "f73b2d01-1877-48ec-9a5f-c8b3a29cb3de"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Astik2004/Microservices_Project.git&quot;,
+    &quot;accountId&quot;: &quot;f73b2d01-1877-48ec-9a5f-c8b3a29cb3de&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="36yzZD0p2C5SyHwsezMrSVRCjnZ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -129,6 +136,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Explyt Spring.OrderServiceApplication" />
+        <item itemvalue="Explyt Spring.OrderServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -154,5 +162,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Order Code changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Order Code changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/dto/OrderRequest.java</url>
+          <line>12</line>
+          <properties field="skuCode" class="com.astik.microservices.order.dto.OrderRequest" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

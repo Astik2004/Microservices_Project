@@ -1,18 +1,22 @@
 package com.astik.microservices.order;
 
+import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
-import org.springframework.context.annotation.Import;
 import org.testcontainers.mysql.MySQLContainer;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class OrderServiceApplicationTests {
 
     @ServiceConnection
     static MySQLContainer mySQLContainer = new MySQLContainer("mysql:8.3.0");
+
     @LocalServerPort
     private Integer port;
 
@@ -28,6 +32,7 @@ class OrderServiceApplicationTests {
 
     @Test
     void shouldSubmitOrder() {
+
         String submitOrderJson = """
                 {
                      "skuCode": "iphone_15",
@@ -36,19 +41,17 @@ class OrderServiceApplicationTests {
                 }
                 """;
 
+        String responseBodyString =
+                RestAssured.given()
+                        .contentType("application/json")
+                        .body(submitOrderJson)
+                        .when()
+                        .post("/api/order")
+                        .then()
+                        .statusCode(201)
+                        .extract()
+                        .asString();
 
-        var responseBodyString = RestAssured.given()
-                .contentType("application/json")
-                .body(submitOrderJson)
-                .when()
-                .post("/api/order")
-                .then()
-                .log().all()
-                .statusCode(201)
-                .extract()
-                .body().asString();
-
-        assertThat(responseBodyString, Matchers.is("Order Placed Successfully"));
+        assertThat(responseBodyString, is("Order Placed Successfully"));
     }
-
 }

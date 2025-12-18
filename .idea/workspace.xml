@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b55f0ca0-b1de-4780-9d3b-741e448d7d3f" name="Changes" comment="Migration Changes">
-      <change afterPath="$PROJECT_DIR$/inventry-service/src/main/java/com/astik/microservice/inventry/controller/InventryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventry-service/src/main/java/com/astik/microservice/inventry/entity/Inventry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventry-service/src/main/java/com/astik/microservice/inventry/repository/InventryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventry-service/src/main/java/com/astik/microservice/inventry/service/InventryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inventry-service/src/main/resources/db/migration/V2__add_inventry.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Microservices.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Order_service.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-12-2025_12_42_am_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-12-2025_12_42_am_[Changes]1/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/inventry-service/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-12-2025_12_42_am__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="b55f0ca0-b1de-4780-9d3b-741e448d7d3f" name="Changes" comment="Code Changes for Inventry Service">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/client/InventryClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventry-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/inventry-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventry-service/src/main/java/com/astik/microservice/inventry/controller/InventryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventry-service/src/main/java/com/astik/microservice/inventry/controller/InventryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/astik/microservices/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/astik/microservices/order/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/astik/microservices/order/OrderServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -55,12 +50,17 @@
       &quot;state&quot;: &quot;MERGED&quot;,
       &quot;assignee&quot;: &quot;Astik2004&quot;,
       &quot;author&quot;: &quot;Astik2004&quot;
+    },
+    {
+      &quot;assignee&quot;: &quot;Astik2004&quot;,
+      &quot;author&quot;: &quot;Astik2004&quot;
+    },
+    {
+      &quot;assignee&quot;: &quot;Astik2004&quot;
     }
   ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;MERGED&quot;,
-    &quot;assignee&quot;: &quot;Astik2004&quot;,
-    &quot;author&quot;: &quot;Astik2004&quot;
+    &quot;assignee&quot;: &quot;Astik2004&quot;
   }
 }</component>
   <component name="GitHubPullRequestState">{
@@ -115,25 +115,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Inventry-service.executor": "Run",
-    "Application.Order-service.executor": "Run",
-    "Application.Product-service.executor": "Run",
-    "Explyt Spring.InventryServiceApplication.executor": "Run",
-    "Explyt Spring.OrderServiceApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "NotificationExplytEndpoints": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Microservices",
-    "settings.editor.selected.configurable": "com.explyt.spring.runConfigurations"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Inventry-service.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Order-service.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Product-service.executor&quot;: &quot;Run&quot;,
+    &quot;Explyt Spring.InventryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Explyt Spring.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;NotificationExplytEndpoints&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Microservices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.explyt.spring.runConfigurations&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -146,7 +146,6 @@
           <value>
             <map>
               <entry key="Inventry-service" value="STOPPED" />
-              <entry key="Order-service" value="STOPPED" />
               <entry key="Product-service" value="STOPPED" />
             </map>
           </value>
@@ -211,10 +210,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Explyt Spring.OrderServiceApplication" />
         <item itemvalue="Explyt Spring.InventryServiceApplication" />
         <item itemvalue="Explyt Spring.OrderServiceApplication" />
-        <item itemvalue="Explyt Spring.OrderServiceApplication" />
-        <item itemvalue="Explyt Spring.OrderServiceApplication" />
+        <item itemvalue="Explyt Spring.InventryServiceApplication" />
         <item itemvalue="Explyt Spring.OrderServiceApplication" />
       </list>
     </recent_temporary>

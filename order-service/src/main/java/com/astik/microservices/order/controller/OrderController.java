@@ -2,7 +2,6 @@ package com.astik.microservices.order.controller;
 
 import com.astik.microservices.order.dto.OrderRequest;
 import com.astik.microservices.order.dto.OrderResponse;
-import com.astik.microservices.order.repository.OrderRepository;
 import com.astik.microservices.order.service.OrderService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
